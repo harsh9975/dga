@@ -1,0 +1,47 @@
+/* Base button styles */
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  width: fit-content;
+  margin: 5px 0;
+}
+
+/* Filled button style */
+.button.filled {
+  background-color: #366bbb;
+  border: 1px solid #366bbb;
+  color: #ffffff;
+}
+
+/* .button.filled:hover {
+  background-color: white;
+  border: 1px solid #366bbb;
+  color: #366bbb;
+} */
+
+/* Outline button style */
+.button.outline {
+  background-color: transparent;
+  color: #366bbb;
+  border: 1px solid #366bbb;
+}
+
+/* .button.outline:hover {
+  background-color: #366bbb;
+  color: #ffffff;
+} */
+
+.button-icon {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+}
