@@ -25,6 +25,45 @@ const Home = () => {
         <Textfield type="h4">This is a Heading 4</Textfield>
         <Textfield type="h5">This is a Heading 5</Textfield>
         <Textfield type="h6">This is a Heading 6</Textfield>
+
+        <Textfield type="h1" colorType="blue">
+          This is a Heading 1
+        </Textfield>
+        <Textfield type="h2" colorType="blue">
+          This is a Heading 2
+        </Textfield>
+        <Textfield type="h3" colorType="blue">
+          This is a Heading 3
+        </Textfield>
+        <Textfield type="h4" colorType="blue">
+          This is a Heading 4
+        </Textfield>
+        <Textfield type="h5" colorType="blue">
+          This is a Heading 5
+        </Textfield>
+        <Textfield type="h6" colorType="blue">
+          This is a Heading 6
+        </Textfield>
+
+        <Textfield type="h1" colorType="grey">
+          This is a Heading 1
+        </Textfield>
+        <Textfield type="h2" colorType="grey">
+          This is a Heading 2
+        </Textfield>
+        <Textfield type="h3" colorType="grey">
+          This is a Heading 3
+        </Textfield>
+        <Textfield type="h4" colorType="grey">
+          This is a Heading 4
+        </Textfield>
+        <Textfield type="h5" colorType="grey">
+          This is a Heading 5
+        </Textfield>
+        <Textfield type="h6" colorType="grey">
+          This is a Heading 6
+        </Textfield>
+
         <Textfield type="p">This is a paragraph</Textfield>
         <Textfield type="span">This is a span</Textfield>
         <Button>Filled Button</Button>
