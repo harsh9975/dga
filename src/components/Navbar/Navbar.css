@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   /* Default styles */
 }
 
@@ -15,6 +16,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 25px;
 }
 
 .nav-item {
@@ -54,17 +56,17 @@
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0; /* Default hover background color */
+  background-color: #fff;
 }
 
 .navbar.light {
-  background-color: #f0f0f0; /* Light theme background color */
-  color: #333; /* Light theme text color */
+  background-color: #fff;
+  color: #000; /* Light theme text color */
 }
 
 .dropdown-menu.light {
-  background-color: #f0f0f0; /* Light theme dropdown background color */
-  color: #333; /* Light theme dropdown text color */
+  background-color: #fff;
+  color: #000; /* Light theme dropdown text color */
 }
 
 .dropdown-item.light:hover {

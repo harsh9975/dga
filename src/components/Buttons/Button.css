@@ -22,23 +22,17 @@
   color: #ffffff;
 }
 
-/* .button.filled:hover {
-  background-color: white;
-  border: 1px solid #366bbb;
-  color: #366bbb;
-} */
-
-/* Outline button style */
 .button.outline {
   background-color: transparent;
   color: #366bbb;
   border: 1px solid #366bbb;
 }
 
-/* .button.outline:hover {
-  background-color: #366bbb;
-  color: #ffffff;
-} */
+.button.allBlue {
+  background-color: #c7e7ff;
+  border: 1px solid #c7e7ff;
+  color: #366bbb;
+}
 
 .button-icon {
   margin-right: 8px;

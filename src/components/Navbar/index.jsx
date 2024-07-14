@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import Button from "../Buttons";
+import { Link } from "react-router-dom";
+import Textfield from "../Textfield";
 
-const Navbar = ({ theme = "dark" }) => {
+const Navbar = ({ theme = "light" }) => {
   const [dropdown1Open, setDropdown1Open] = useState(false);
   const [dropdown2Open, setDropdown2Open] = useState(false);
 
@@ -20,35 +23,39 @@ const Navbar = ({ theme = "dark" }) => {
 
   return (
     <nav className={`navbar ${theme}`}>
-      <div className="navbar-brand">
-        <span className="navbar-brand-text">My App</span>
+      <div className="navbar-brand" style={{ width: "20vw" }}>
+        <span className="navbar-brand-text">Logo</span>
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="#" className="nav-link" onClick={toggleDropdown1}>
-            Dropdown 1
-          </a>
-          {dropdown1Open && (
-            <ul className="dropdown-menu">
-              <li className="dropdown-item">Option 1</li>
-              <li className="dropdown-item">Option 2</li>
-              <li className="dropdown-item">Option 3</li>
-            </ul>
-          )}
+          <Link to="/">
+            <Textfield type="h5">Home</Textfield>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link" onClick={toggleDropdown2}>
-            Dropdown 2
-          </a>
-          {dropdown2Open && (
-            <ul className="dropdown-menu">
-              <li className="dropdown-item">Option A</li>
-              <li className="dropdown-item">Option B</li>
-              <li className="dropdown-item">Option C</li>
-            </ul>
-          )}
+          <Link to="/about">
+            <Textfield type="h5">About Us</Textfield>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/courses">
+            <Textfield type="h5">Courses</Textfield>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/blogs">
+            <Textfield type="h5">Blogs</Textfield>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/contact">
+            <Textfield type="h5">Contact Us</Textfield>
+          </Link>
         </li>
       </ul>
+      <div className="navbar-brand" style={{ width: "17vw" }}>
+        <Button type="allBlue">Book a free demo class</Button>
+      </div>
     </nav>
   );
 };
