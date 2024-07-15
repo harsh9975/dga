@@ -10,7 +10,7 @@ import {
 import { BsTwitterX } from "react-icons/bs";
 import { IoMdCall } from "react-icons/io";
 const Topnav = ({ type = "dark" }) => {
-  let color = type === "light" ? "#fff" : "#9f9f9f";
+  let color = type === "light" ? "#9f9f9f" : "#9f9f9f";
   return (
     <div
       className={styles.topnav}
