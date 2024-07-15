@@ -5,6 +5,7 @@ import TextInput from "../../components/TextInput";
 import Select from "../../components/TextInput/Select";
 import DatePicker from "../../components/TextInput/DatePicker";
 import Layout from "../../molecules/Layout";
+import styles from "./Home.module.css";
 
 const Home = () => {
   const [date, setDate] = useState("");
@@ -17,81 +18,25 @@ const Home = () => {
     { value: "option3", label: "Option 3" },
   ];
   return (
-    <Layout>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <Textfield type="h1">This is a Heading 1</Textfield>
-        <Textfield type="h2">This is a Heading 2</Textfield>
-        <Textfield type="h3">This is a Heading 3</Textfield>
-        <Textfield type="h4">This is a Heading 4</Textfield>
-        <Textfield type="h5">This is a Heading 5</Textfield>
-        <Textfield type="h6">This is a Heading 6</Textfield>
-
-        <Textfield type="h1" colorType="blue">
-          This is a Heading 1
+    <Layout isHome>
+      <div className={styles.profesion}>
+        <Textfield colorType="blue" type="h1">
+          What is our Profession
         </Textfield>
-        <Textfield type="h2" colorType="blue">
-          This is a Heading 2
-        </Textfield>
-        <Textfield type="h3" colorType="blue">
-          This is a Heading 3
-        </Textfield>
-        <Textfield type="h4" colorType="blue">
-          This is a Heading 4
-        </Textfield>
-        <Textfield type="h5" colorType="blue">
-          This is a Heading 5
-        </Textfield>
-        <Textfield type="h6" colorType="blue">
-          This is a Heading 6
-        </Textfield>
-
-        <Textfield type="h1" colorType="grey">
-          This is a Heading 1
-        </Textfield>
-        <Textfield type="h2" colorType="grey">
-          This is a Heading 2
-        </Textfield>
-        <Textfield type="h3" colorType="grey">
-          This is a Heading 3
-        </Textfield>
-        <Textfield type="h4" colorType="grey">
-          This is a Heading 4
-        </Textfield>
-        <Textfield type="h5" colorType="grey">
-          This is a Heading 5
-        </Textfield>
-        <Textfield type="h6" colorType="grey">
-          This is a Heading 6
-        </Textfield>
-
-        <Textfield type="p">This is a paragraph</Textfield>
-        <Textfield type="span">This is a span</Textfield>
-        <Button>Filled Button</Button>
-        <Button type={"outline"}>Oulined Button</Button>
-        <div
-          style={{
-            padding: 10,
-            display: "flex",
-            flexDirection: "column",
-            backgroundColor: "#c9e2ff",
-          }}
+        <Textfield
+          colorType="blue"
+          type="h5"
+          style={{ marginTop: 10, fontWeight: 400 }}
         >
-          <TextInput label="Name" placeholder="Enter Name"></TextInput>
-          <DatePicker
-            label="Pick a Date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            error={!date && "Date is required"}
-          />
-
-          <Select
-            label="Choose an Option"
-            value={selectedOption}
-            onChange={(e) => setSelectedOption(e.target.value)}
-            options={options}
-            error={!selectedOption && "Option is required"}
-          />
-        </div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          esse autem fugiat quos doloremque aspernatur nam vero et reprehenderit
+          exercitationem praesentium ab suscipit voluptatibus rerum enim, ipsum
+          saepe eligendi. Sequi. Sed dolore molestiae consequuntur quidem
+          adipisci fuga nihil autem? Pariatur similique perferendis quas
+          officiis ab illum ut, nulla labore, porro dolorem eos, hic accusamus?
+          Obcaecati dolores quam pariatur! Rem, ipsam!
+        </Textfield>
+        <Button>Book Now</Button>
       </div>
     </Layout>
   );

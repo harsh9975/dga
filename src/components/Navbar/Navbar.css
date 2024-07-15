@@ -74,7 +74,7 @@
 }
 
 .navbar.dark {
-  background-color: #333; /* Dark theme background color */
+  background-color: transparent; /* Dark theme background color */
   color: #fff; /* Dark theme text color */
 }
 

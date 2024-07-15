@@ -29,27 +29,52 @@ const Navbar = ({ theme = "light" }) => {
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link to="/">
-            <Textfield type="h5">Home</Textfield>
+            <Textfield
+              colorType={theme == "light" ? "black" : "white"}
+              type="h5"
+            >
+              Home
+            </Textfield>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/about">
-            <Textfield type="h5">About Us</Textfield>
+            <Textfield
+              colorType={theme == "light" ? "black" : "white"}
+              type="h5"
+            >
+              About Us
+            </Textfield>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/courses">
-            <Textfield type="h5">Courses</Textfield>
+            <Textfield
+              colorType={theme == "light" ? "black" : "white"}
+              type="h5"
+            >
+              Courses
+            </Textfield>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/blogs">
-            <Textfield type="h5">Blogs</Textfield>
+            <Textfield
+              colorType={theme == "light" ? "black" : "white"}
+              type="h5"
+            >
+              Blogs
+            </Textfield>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/contact">
-            <Textfield type="h5">Contact Us</Textfield>
+            <Textfield
+              colorType={theme == "light" ? "black" : "white"}
+              type="h5"
+            >
+              Contact Us
+            </Textfield>
           </Link>
         </li>
       </ul>

@@ -14,7 +14,10 @@ const Topnav = ({ type = "dark" }) => {
   return (
     <div
       className={styles.topnav}
-      style={{ borderBottom: `1px solid ${color}` }}
+      style={{
+        borderBottom: `1px solid ${color}`,
+        backgroundColor: type === "light" ? "#fff" : "transparent",
+      }}
     >
       <div className={styles.left}>
         <div className={styles.social}>

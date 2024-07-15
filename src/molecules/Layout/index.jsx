@@ -6,13 +6,21 @@ import styles from "./Layout.module.css";
 import Footer from "../Footer";
 import BookAppointmentBanner from "../BookAppointmentBanner";
 import ContactBanner from "../ContactBanner";
-const Layout = ({ children }) => {
+const Layout = ({ children, isHome = false }) => {
   return (
     <div className={styles.layout}>
       <div className={styles.nav}>
-        <Topnav />
-        <Navbar />
+        <Topnav theme={isHome ? "dark" : "light"} />
+        <Navbar theme={isHome ? "dark" : "light"} />
       </div>
+
+      {isHome ? (
+        <div style={{ backgroundColor: "#cdebff" }}>
+          <div className={styles.header}>
+            <Header />
+          </div>
+        </div>
+      ) : null}
       <div className={styles.main}>{children}</div>
       <ContactBanner />
       <BookAppointmentBanner />

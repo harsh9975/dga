@@ -1,0 +1,11 @@
+.profesion {
+  background-color: #cdebff;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 230px 50px 230px;
+  text-align: center;
+  gap: 10px;
+}
