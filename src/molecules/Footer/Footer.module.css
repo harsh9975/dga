@@ -1,0 +1,46 @@
+/* #023a65 */
+
+.footer {
+  background-color: #023a65;
+  width: 100vw;
+}
+
+.footerMain {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 25px 30px 40px 30px;
+}
+
+.logo {
+  height: 80%;
+  width: 100%;
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.worktime {
+  height: 80%;
+  width: 100%;
+  margin-top: 30px;
+}
+.services {
+  height: 80%;
+  width: 100%;
+  margin-top: 30px;
+}
+.outclinics {
+  height: 80%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.copyright {
+  width: 100vw;
+  height: 5%;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #ffffff5c;
+  color: #ffffff5c !important;
+}

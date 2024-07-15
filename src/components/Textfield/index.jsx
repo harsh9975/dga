@@ -22,7 +22,7 @@ const Textfield = ({
     colorType == "black"
       ? "#222222"
       : colorType == "blue"
-      ? "#1d4c92"
+      ? "#023a65"
       : colorType == "white"
       ? "#fff"
       : "#bfbfbf";
