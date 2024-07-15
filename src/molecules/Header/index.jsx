@@ -30,7 +30,7 @@ const Header = () => {
               Watch the Video
             </Textfield>
             <div className={styles.circle}>
-              <IoPlay color="#023a65" size={24} />
+              <IoPlay color="#023a65" size={18} />
             </div>
           </div>
         </div>
